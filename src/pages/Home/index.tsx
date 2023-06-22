@@ -57,30 +57,32 @@ import {
   TitleColumnLink,
   ButtonLink,
   ButtonSocialMedia,
-} from "./styles";
+} from './styles'
 
-import { FaArrowUp } from "react-icons/fa";
-import { AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
-import { RxTwitterLogo } from "react-icons/rx";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaArrowUp } from 'react-icons/fa'
+import { AiOutlineYoutube, AiOutlineInstagram } from 'react-icons/ai'
+import { RxTwitterLogo } from 'react-icons/rx'
+import { HiOutlineMail } from 'react-icons/hi'
 
-import Background from "../../assets/background.svg";
-import RocketNFTs from "../../assets/RocketNFTs.svg";
-import MetaMask from "../../assets/MetaMasklogo.svg";
-import Badge from "../../assets/Badge.svg";
-import Avatar1 from "../../assets/Avatar/avatar1.svg";
-import Avatar2 from "../../assets/Avatar/avatar2.svg";
-import Avatar3 from "../../assets/Avatar/avatar3.svg";
-import Avatar4 from "../../assets/Avatar/avatar4.svg";
-import Rocketman1 from "../../assets/rocketman/galeria-1.svg";
-import Rocketman2 from "../../assets/rocketman/galeria-2.svg";
-import Rocketman3 from "../../assets/rocketman/galeria-3.svg";
-import Rocketman4 from "../../assets/rocketman/galeria-4.svg";
-import Rocketman5 from "../../assets/rocketman/galeria-5.svg";
-import Rocketman6 from "../../assets/rocketman/galeria-6.svg";
-import Rocketman7 from "../../assets/rocketman/galeria-7.svg";
-import Rocketman8 from "../../assets/rocketman/galeria-8.svg";
-import Banner from "../../assets/banner.svg";
+import Background from '../../assets/background.svg'
+import RocketNFTs from '../../assets/RocketNFTs.svg'
+import MetaMask from '../../assets/MetaMasklogo.svg'
+import Badge from '../../assets/Badge.svg'
+import Avatar1 from '../../assets/Avatar/avatar1.svg'
+import Avatar2 from '../../assets/Avatar/avatar2.svg'
+import Avatar3 from '../../assets/Avatar/avatar3.svg'
+import Avatar4 from '../../assets/Avatar/avatar4.svg'
+import Avatar5 from '../../assets/Avatar/avatar5.jpg'
+import Avatar6 from '../../assets/Avatar/avatar6.jpg'
+import Rocketman1 from '../../assets/rocketman/galeria-1.svg'
+import Rocketman2 from '../../assets/rocketman/galeria-2.svg'
+import Rocketman3 from '../../assets/rocketman/galeria-3.svg'
+import Rocketman4 from '../../assets/rocketman/galeria-4.svg'
+import Rocketman5 from '../../assets/rocketman/galeria-5.svg'
+import Rocketman6 from '../../assets/rocketman/galeria-6.svg'
+import Rocketman7 from '../../assets/rocketman/galeria-7.svg'
+import Rocketman8 from '../../assets/rocketman/galeria-8.svg'
+import Banner from '../../assets/banner.svg'
 
 export function Home() {
   const imgProfiles = [
@@ -88,7 +90,7 @@ export function Home() {
     { name: Avatar2, position: 40 },
     { name: Avatar3, position: 20 },
     { name: Avatar4, position: 0 },
-  ];
+  ]
   const imgsRocketman = [
     Rocketman1,
     Rocketman2,
@@ -98,22 +100,22 @@ export function Home() {
     Rocketman6,
     Rocketman7,
     Rocketman8,
-  ];
+  ]
 
   function showProfiles() {
     const imgRender = imgProfiles.map((profile, i) => {
-      return <ImageAvatar key={i} src={profile.name} left={profile.position} />;
-    });
+      return <ImageAvatar key={i} src={profile.name} left={profile.position} />
+    })
 
-    return imgRender;
+    return imgRender
   }
 
   function showImgsRocketman() {
     const imgRender = imgsRocketman.map((img, i) => (
       <ImageRocketman key={i} src={img} />
-    ));
+    ))
 
-    return imgRender;
+    return imgRender
   }
   return (
     <ContainerHome>
@@ -146,7 +148,7 @@ export function Home() {
             </WrapperArtists>
           </WrapperDescription>
           <WrapperTitle>
-            Descubra a verdadeira arte digital e<br /> colecione diversas{" "}
+            Descubra a verdadeira arte digital e<br /> colecione diversas{' '}
             <span>NFTs</span>
           </WrapperTitle>
           <ImageBadge src={Badge} />
@@ -264,35 +266,35 @@ export function Home() {
         <WrapperBetterArtists>
           <ImageBetterArtist src={Avatar2} />
           <WrapperInfoBetterArtist>
-            <NameBetterArtist>Jhonathan Felix Braz</NameBetterArtist>
+            <NameBetterArtist>Tiago Fernandes</NameBetterArtist>
             <QuantPhotosProfile>80 Fotografias</QuantPhotosProfile>
           </WrapperInfoBetterArtist>
         </WrapperBetterArtists>
         <WrapperBetterArtists>
           <ImageBetterArtist src={Avatar3} />
           <WrapperInfoBetterArtist>
-            <NameBetterArtist>Jhonathan Felix Braz</NameBetterArtist>
+            <NameBetterArtist>Bruno Carvalho</NameBetterArtist>
+            <QuantPhotosProfile>80 Fotografias</QuantPhotosProfile>
+          </WrapperInfoBetterArtist>
+        </WrapperBetterArtists>
+        <WrapperBetterArtists>
+          <ImageBetterArtist src={Avatar6} />
+          <WrapperInfoBetterArtist>
+            <NameBetterArtist>Julia Fernandes</NameBetterArtist>
+            <QuantPhotosProfile>80 Fotografias</QuantPhotosProfile>
+          </WrapperInfoBetterArtist>
+        </WrapperBetterArtists>
+        <WrapperBetterArtists>
+          <ImageBetterArtist src={Avatar5} />
+          <WrapperInfoBetterArtist>
+            <NameBetterArtist>Marcelo Cardoso</NameBetterArtist>
             <QuantPhotosProfile>80 Fotografias</QuantPhotosProfile>
           </WrapperInfoBetterArtist>
         </WrapperBetterArtists>
         <WrapperBetterArtists>
           <ImageBetterArtist src={Avatar4} />
           <WrapperInfoBetterArtist>
-            <NameBetterArtist>Jhonathan Felix Braz</NameBetterArtist>
-            <QuantPhotosProfile>80 Fotografias</QuantPhotosProfile>
-          </WrapperInfoBetterArtist>
-        </WrapperBetterArtists>
-        <WrapperBetterArtists>
-          <ImageBetterArtist src={Avatar4} />
-          <WrapperInfoBetterArtist>
-            <NameBetterArtist>Jhonathan Felix Braz</NameBetterArtist>
-            <QuantPhotosProfile>80 Fotografias</QuantPhotosProfile>
-          </WrapperInfoBetterArtist>
-        </WrapperBetterArtists>
-        <WrapperBetterArtists>
-          <ImageBetterArtist src={Avatar4} />
-          <WrapperInfoBetterArtist>
-            <NameBetterArtist>Jhonathan Felix Braz</NameBetterArtist>
+            <NameBetterArtist>André Mendes</NameBetterArtist>
             <QuantPhotosProfile>80 Fotografias</QuantPhotosProfile>
           </WrapperInfoBetterArtist>
         </WrapperBetterArtists>
@@ -356,5 +358,5 @@ export function Home() {
         </WrapperSocialMedia>
       </FooterPage>
     </ContainerHome>
-  );
+  )
 }
